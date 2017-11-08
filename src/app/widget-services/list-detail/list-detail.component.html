@@ -1,0 +1,9 @@
+<div class="collection">
+  <a *ngFor="let widget of widgets " class="collection-item">
+    {{widget.name}}
+    <button class = "right"(click)="deleteWidgets(widget)"><i class="material-icons">delete</i></button>
+    <button class = "right"(click)="updateWidgets(widget)"><i class="material-icons">system_update_alt</i></button>
+    <br>
+    <p>{{widget.desc}}</p>
+  </a>
+</div>
